@@ -6,7 +6,7 @@ import { FortuneButton } from '@/components/fortune-button';
 import { title, description } from '@/lib/metadata';
 
 export const FortuneApp: FC = () => {
-  const fortunes = [
+  const fortunes: { text: string; type: "lucky" | "unlucky" }[] = [
     { text: "You will find a pleasant surprise today.", type: "lucky" },
     { text: "A new opportunity is on the horizon.", type: "lucky" },
     { text: "Laughter is the best medicine.", type: "lucky" },
